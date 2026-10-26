@@ -16,3 +16,15 @@ jobs:
 
       - name: Ver archivos disponibles
         run: ls -la
+
+  repo-files:
+    runs-on: ubuntu-26.04
+    steps:
+      - name: "Descargar codigo del repo"
+        uses: actions/checkout@v6
+
+      - name: "Ver archivos disponibles"
+        run: ls -la
+
+      - name: "Quien soy"
+        run: whoami
